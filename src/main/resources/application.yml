@@ -1,0 +1,45 @@
+server:
+  port: 8080
+  
+############################################################
+# REDIS 配置
+############################################################
+redis:
+  host: 127.0.0.1
+  # Redis服务器连接端口
+  port: 6379
+  jedis:
+    pool:
+      #连接池最大连接数（使用负值表示没有限制）
+      max-active: 100
+      # 连接池中的最小空闲连接
+      max-idle: 10
+      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+      max-wait: 100000
+  # 连接超时时间（毫秒）
+  timeout: 5000
+  #默认是索引为0的数据库
+  database: 0
+
+############################################################
+# kafka 配置
+############################################################
+spring:
+  kafka:
+    bootstrap-servers: 10.0.1.153:9092
+    producer:
+      # 每次批量发送消息的数量
+      batch-size: 16
+      # 缓存容量
+      buffer-memory: 33554432
+      #设置大于0的值，则客户端会将发送失败的记录重新发送
+      retries: 0
+      # 指定消息key和消息体的编解码方式 UTF-8
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+kafka:
+  #订阅的主题
+  topic: topic-test-01
+  #主题消费分组
+  group: group-test-01

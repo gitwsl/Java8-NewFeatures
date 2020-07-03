@@ -1,0 +1,8 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "3.3.0",
+    "title" : "ISOP embryo Interface Instruction"
+  },
+  "schemes" : [ "http" ]
+}
