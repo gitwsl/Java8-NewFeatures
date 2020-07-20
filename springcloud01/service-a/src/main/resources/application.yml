@@ -1,0 +1,17 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: service-objcat-a
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8081/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
