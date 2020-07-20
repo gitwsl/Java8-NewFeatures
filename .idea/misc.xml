@@ -8,6 +8,10 @@
         <option value="$PROJECT_DIR$/springboot-mybatisplus/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud01/pom.xml" />
         <option value="$PROJECT_DIR$/websocket/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud01/service-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud01/server-zuui/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud01/service-a/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud01/service-b/pom.xml" />
       </list>
     </option>
   </component>

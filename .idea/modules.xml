@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java8-NewFeatures.iml" filepath="$PROJECT_DIR$/Java8-NewFeatures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01/server-zuui/server-zuui.iml" filepath="$PROJECT_DIR$/springcloud01/server-zuui/server-zuui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01/service-a/service-a.iml" filepath="$PROJECT_DIR$/springcloud01/service-a/service-a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01/service-b/service-b.iml" filepath="$PROJECT_DIR$/springcloud01/service-b/service-b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01/service-eureka/service-eureka.iml" filepath="$PROJECT_DIR$/springcloud01/service-eureka/service-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-data-jpa/spring-data-jpa.iml" filepath="$PROJECT_DIR$/spring-data-jpa/spring-data-jpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatisplus/springboot-mybatisplus.iml" filepath="$PROJECT_DIR$/springboot-mybatisplus/springboot-mybatisplus.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud01/springcloud01.iml" filepath="$PROJECT_DIR$/springcloud01/springcloud01.iml" />

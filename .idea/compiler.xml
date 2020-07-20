@@ -6,15 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springcloud01" />
-        <module name="Java8-NewFeatures" />
         <module name="springboot-mybatisplus" />
-        <module name="websocket" />
         <module name="spring-data-jpa" />
+        <module name="service-eureka" />
+        <module name="Java8-NewFeatures" />
+        <module name="websocket" />
+        <module name="service-a" />
+        <module name="service-b" />
+        <module name="springcloud01" />
+        <module name="server-zuui" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Java8-NewFeatures" target="1.8" />
+      <module name="server-zuui" target="1.8" />
+      <module name="service-a" target="1.8" />
+      <module name="service-b" target="1.8" />
+      <module name="service-eureka" target="1.8" />
       <module name="spring-data-jpa" target="1.8" />
       <module name="springboot-mybatisplus" target="1.8" />
       <module name="springcloud01" target="1.8" />
@@ -24,6 +32,10 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Java8-NewFeatures" options="-parameters" />
+      <module name="server-zuui" options="-parameters" />
+      <module name="service-a" options="-parameters" />
+      <module name="service-b" options="-parameters" />
+      <module name="service-eureka" options="-parameters" />
       <module name="spring-data-jpa" options="-parameters" />
       <module name="springboot-mybatisplus" options="-parameters" />
       <module name="springcloud01" options="-parameters" />

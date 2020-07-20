@@ -7,19 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/return")
 public class Index {
     @RequestMapping("/a")
-    public String geta(){
-        System.out.println("aaaaaaaaa");
+    public String geta() {
+        System.out.println("test aaa~~~");
         return "/index.html";
-    }
-    @RequestMapping("/b")
-    public String getb(){
-        System.out.println("bbbb");
-        return "/hello";
-    }
-
-    @RequestMapping("/c")
-    public String getc(){
-        System.out.println("ccccc");
-        return "/login";
     }
 }
