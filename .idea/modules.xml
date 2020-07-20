@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/Java8-NewFeatures.iml" filepath="$PROJECT_DIR$/Java8-NewFeatures.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-data-jpa/spring-data-jpa.iml" filepath="$PROJECT_DIR$/spring-data-jpa/spring-data-jpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatisplus/springboot-mybatisplus.iml" filepath="$PROJECT_DIR$/springboot-mybatisplus/springboot-mybatisplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01/springcloud01.iml" filepath="$PROJECT_DIR$/springcloud01/springcloud01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websocket/websocket.iml" filepath="$PROJECT_DIR$/websocket/websocket.iml" />
     </modules>
   </component>
 </project>

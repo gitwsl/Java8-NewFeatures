@@ -1,0 +1,4 @@
+连接websocket:
+   http://localhost:8081/return/a
+服务器发送消息给客户端：
+   http://localhost:8081/checkcenter/socket/push/22?message=Hello111

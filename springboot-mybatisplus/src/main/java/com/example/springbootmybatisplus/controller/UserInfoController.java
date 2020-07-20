@@ -56,8 +56,8 @@ public class UserInfoController {
     public IPage<UserInfoEntity> getInfoListPage(){
         //需要在Config配置类中配置分页插件
         IPage<UserInfoEntity> page = new Page<>();
-        page.setCurrent(1); //当前页
-        page.setSize(5);    //每页条数
+        page.setCurrent(2); //当前页
+        page.setSize(3);    //每页条数
         page = userInfoService.page(page);
         return page;
     }

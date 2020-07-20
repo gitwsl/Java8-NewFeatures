@@ -4,6 +4,7 @@ import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.pulsar.client.api.*;
 
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
@@ -78,5 +79,24 @@ public class PulsarUtils {
                 .subscriptionType(subscriptionType)
                 .subscribe();
 
+    }
+
+    public static void main(String[] args) throws Exception {
+        PulsarClient client = PulsarClient.builder()
+                .serviceUrl("pulsar://10.0.3.140:6650")
+                .build();
+        Consumer<byte[]> consumer = client.newConsumer()
+                .topics(Arrays.asList(
+                        "POINT_DATA_TRANSFORMED_2_ALERT_RULE_qa"))
+                .subscriptionName("test-factory")
+                .ackTimeout(10, TimeUnit.SECONDS)
+                .subscriptionType(SubscriptionType.Shared)
+                .subscribe();
+        while (true) {
+            Message<byte[]> msg = consumer.receive();
+            String str = new String(msg.getData());
+            consumer.acknowledge(msg);
+            System.out.println("<================consumer===================>:" + str);
+        }
     }
 }

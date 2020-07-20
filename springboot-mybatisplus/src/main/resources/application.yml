@@ -1,10 +1,10 @@
 server:
-  port: 8081
+  port: 8091
 spring:
   # 配置数据源
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.0.1.153:3306/lin?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://10.0.3.93:3306/isop_lin?useUnicode=true&characterEncoding=utf-8
     username: root
     password: yunzhihui123
 # mybatis-plus相关配置
