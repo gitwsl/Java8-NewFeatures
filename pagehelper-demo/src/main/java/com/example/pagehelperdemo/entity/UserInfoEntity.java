@@ -1,9 +1,9 @@
-package com.example.springbootmybatisplus.entity;
+package com.example.pagehelperdemo.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @Description 学生信息实体类
@@ -11,7 +11,9 @@ import lombok.Data;
  * @CreateTime 2019/5/26 21:41
  */
 @Data
-@TableName("user_info") //@TableName中的值对应着表名
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserInfoEntity {
 
     /**
@@ -24,7 +26,6 @@ public class UserInfoEntity {
      * UUID: 全局唯一ID，UUID类型的主键
      * NONE: 该类型为未设置主键类型
      */
-    @TableId(type = IdType.AUTO)
     private Long id;
     /**
      * 姓名

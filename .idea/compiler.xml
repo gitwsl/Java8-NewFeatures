@@ -8,17 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-mybatisplus" />
         <module name="spring-data-jpa" />
-        <module name="service-eureka" />
+        <module name="service-a" />
         <module name="Java8-NewFeatures" />
         <module name="websocket" />
-        <module name="service-a" />
         <module name="service-b" />
-        <module name="springcloud01" />
+        <module name="pagehelper-demo" />
+        <module name="service-eureka" />
         <module name="server-zuui" />
+        <module name="springcloud01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Java8-NewFeatures" target="1.8" />
+      <module name="pagehelper-demo" target="1.8" />
       <module name="server-zuui" target="1.8" />
       <module name="service-a" target="1.8" />
       <module name="service-b" target="1.8" />
@@ -32,6 +34,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Java8-NewFeatures" options="-parameters" />
+      <module name="pagehelper-demo" options="-parameters" />
       <module name="server-zuui" options="-parameters" />
       <module name="service-a" options="-parameters" />
       <module name="service-b" options="-parameters" />
