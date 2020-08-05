@@ -7,14 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-mybatisplus" />
-        <module name="spring-data-jpa" />
+        <module name="service-b" />
         <module name="service-a" />
         <module name="Java8-NewFeatures" />
         <module name="websocket" />
-        <module name="service-b" />
         <module name="pagehelper-demo" />
-        <module name="service-eureka" />
+        <module name="shot-eureka" />
+        <module name="spring-data-jpa" />
         <module name="server-zuui" />
+        <module name="service-eureka" />
         <module name="springcloud01" />
       </profile>
     </annotationProcessing>
@@ -25,6 +26,7 @@
       <module name="service-a" target="1.8" />
       <module name="service-b" target="1.8" />
       <module name="service-eureka" target="1.8" />
+      <module name="shot-eureka" target="1.5" />
       <module name="spring-data-jpa" target="1.8" />
       <module name="springboot-mybatisplus" target="1.8" />
       <module name="springcloud01" target="1.8" />
@@ -39,6 +41,7 @@
       <module name="service-a" options="-parameters" />
       <module name="service-b" options="-parameters" />
       <module name="service-eureka" options="-parameters" />
+      <module name="shot-eureka" options="" />
       <module name="spring-data-jpa" options="-parameters" />
       <module name="springboot-mybatisplus" options="-parameters" />
       <module name="springcloud01" options="-parameters" />

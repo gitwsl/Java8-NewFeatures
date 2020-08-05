@@ -1,10 +1,13 @@
 package com.demo.test_jsontoentity;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.*;
 
+import java.net.SocketTimeoutException;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -29,6 +32,10 @@ public class json_property {
 
         @JsonProperty("role")
         private List<Role> resultDataList;
+
+        @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+        @JsonProperty("create_time")
+        private Date createTime;
     }
 
     @Setter
@@ -57,7 +64,7 @@ public class json_property {
 //        lable.setRole(roleList);
 //        System.out.println(objectMapper.writeValueAsString(lable));
 
-        String a = "{\"NaMe\":\"1\",\"name1\":\"2\",\"role\":[{\"role\":\"a\"},{\"role\":\"b\"}]}";
+        String a = "{\"NaMe\":\"1\",\"name1\":\"2\",\"role\":[{\"role\":\"a\"},{\"role\":\"b\"}],\"create_time\":\"2020-01-01 01:01:01\"}";
         System.out.println("字符串： " + a);
         Label label = objectMapper.readValue(a, Label.class);
         System.out.println("----------反序列化------");
@@ -65,5 +72,27 @@ public class json_property {
         System.out.println("----------序列化------");
         String labelString = objectMapper.writeValueAsString(label);
         System.out.println(labelString);
+
+
+        System.out.println("######################");
+        Test json = new Test();
+        json.setCreateTime(new Date());
+        System.out.println(objectMapper.writeValueAsString(json));
+    }
+
+    @Data
+    static class Test {
+        @JsonProperty("NaMe")
+        public String name;
+
+        @JsonAlias("NaMe1")
+        public String name1;
+
+        @JsonProperty("role")
+        private List<Role> resultDataList;
+
+        @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
+        @JsonProperty("create_time")
+        private Date createTime;
     }
 }

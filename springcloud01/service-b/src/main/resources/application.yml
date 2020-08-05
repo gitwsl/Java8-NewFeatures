@@ -1,5 +1,5 @@
 server:
-  port: 8088
+  port: 8082
 spring:
   application:
     name: service-objcat-b
@@ -15,3 +15,8 @@ eureka:
 ribbon:
   ReadTimeout: 5000
   ConnectTimeout: 5000
+
+# 由于feign默认带了断路器功能，这里需手动开启
+feign:
+  hystrix:
+    enabled: true

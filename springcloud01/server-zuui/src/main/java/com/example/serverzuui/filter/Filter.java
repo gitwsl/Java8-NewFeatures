@@ -39,14 +39,14 @@ public class Filter extends ZuulFilter {
      */
     @Override
     public Object run() {
-        RequestContext currentContext = RequestContext.getCurrentContext();
-        HttpServletRequest request = currentContext.getRequest();
-        String token = request.getParameter("token");
-        if (token == null) {
-            currentContext.setSendZuulResponse(false);
-            currentContext.setResponseBody("token is null");
-            currentContext.setResponseStatusCode(401);
-        }
-        return null;
+//        RequestContext currentContext = RequestContext.getCurrentContext();
+//        HttpServletRequest request = currentContext.getRequest();
+//        String token = request.getParameter("token");
+//        if (token == null) {
+//            currentContext.setSendZuulResponse(false);
+//            currentContext.setResponseBody("token is null");
+//            currentContext.setResponseStatusCode(401);
+//        }
+        return true;
     }
 }
