@@ -1,0 +1,3 @@
+springboot+mybatisplus + yml多数据源切换（@DS("slave") // 默认是主数据源，切换到slave数据源）
+http://localhost:8091/userInfo/getInfoListPage
+http://localhost:8091/userInfo/getInfoListPage2

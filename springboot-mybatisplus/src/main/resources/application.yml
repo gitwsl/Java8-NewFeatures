@@ -1,12 +1,52 @@
 server:
   port: 8091
+#spring:
+#  # 配置数据源
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://10.2.2.28:3306/isop_lin?useUnicode=true&characterEncoding=utf-8
+#    username: root
+#    password: yunzhihui123
 spring:
-  # 配置数据源
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://10.0.3.93:3306/isop_lin?useUnicode=true&characterEncoding=utf-8
-    username: root
-    password: yunzhihui123
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master，如果读者只是单数据源只需要注释掉slave相关配置即可，这里为了方便演示master与slave保持相同
+      datasource:
+        master:
+          url: jdbc:mysql://10.2.2.28:3306/isop_lin?useUnicode=true&characterEncoding=utf-8  # serverTimezone=Hongkong 需要填上时区
+          username: root
+          password: yunzhihui123
+          driverClassName: com.mysql.cj.jdbc.Driver
+        slave:
+          url: jdbc:mysql://127.0.0.1/flight_system?useUnicode=true&characterEncoding=utf-8  # serverTimezone=Hongkong 需要填上时区
+          username: root
+          password: root
+          driverClassName: com.mysql.cj.jdbc.Driver
+      initial-size: 10 # 以下是连接池配置
+      max-active: 100
+      min-idle: 10
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      #validation-query: SELECT 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        login-username: druid
+        login-password: 123456
+      filter:
+        stat:
+          log-slow-sql: true
+          slow-sql-millis: 1000
+          merge-sql: false
+        wall:
+          config:
+            multi-statement-allow: true
 # mybatis-plus相关配置
 mybatis-plus:
   # xml扫描，多个目录用逗号或者分号分隔（告诉 Mapper 所对应的 XML 文件位置）

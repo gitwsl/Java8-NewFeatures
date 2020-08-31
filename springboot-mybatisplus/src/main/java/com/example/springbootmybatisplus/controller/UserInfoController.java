@@ -1,5 +1,6 @@
 package com.example.springbootmybatisplus.controller;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.springbootmybatisplus.entity.UserInfoEntity;
@@ -54,6 +55,17 @@ public class UserInfoController {
      */
     @RequestMapping("/getInfoListPage")
     public IPage<UserInfoEntity> getInfoListPage(){
+        //需要在Config配置类中配置分页插件
+        IPage<UserInfoEntity> page = new Page<>();
+        page.setCurrent(2); //当前页
+        page.setSize(3);    //每页条数
+        page = userInfoService.page(page);
+        return page;
+    }
+
+    @RequestMapping("/getInfoListPage2")
+    @DS("slave") // 默认是主数据源，切换到slave数据源
+    public IPage<UserInfoEntity> getInfoListPage2(){
         //需要在Config配置类中配置分页插件
         IPage<UserInfoEntity> page = new Page<>();
         page.setCurrent(2); //当前页

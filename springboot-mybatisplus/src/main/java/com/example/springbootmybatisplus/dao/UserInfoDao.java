@@ -1,5 +1,6 @@
 package com.example.springbootmybatisplus.dao;
 
+import com.baomidou.dynamic.datasource.annotation.DS;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.example.springbootmybatisplus.entity.UserInfoEntity;
