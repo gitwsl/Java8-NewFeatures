@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java8-NewFeatures.iml" filepath="$PROJECT_DIR$/Java8-NewFeatures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/file-test/file-test.iml" filepath="$PROJECT_DIR$/file-test/file-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/pagehelper-demo/pagehelper-demo.iml" filepath="$PROJECT_DIR$/pagehelper-demo/pagehelper-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud01/server-zuui/server-zuui.iml" filepath="$PROJECT_DIR$/springcloud01/server-zuui/server-zuui.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud01/service-a/service-a.iml" filepath="$PROJECT_DIR$/springcloud01/service-a/service-a.iml" />

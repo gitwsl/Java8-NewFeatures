@@ -1,0 +1,9 @@
+unicom:
+  checkFile:
+    check:
+      hosts: http://localhost:8080
+    save:
+      hosts: http://10.2.29.228:9002
+      paramName: file
+    type_0: objPermisApplyValid
+    type_1: appAcWhiteApplyValid

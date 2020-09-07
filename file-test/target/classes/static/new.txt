@@ -1,0 +1,69 @@
+package com.lin.utils;
+
+import com.lin.model.OrderPO;
+import io.vertx.core.AsyncResult;
+import io.vertx.core.Handler;
+import io.vertx.core.Vertx;
+import io.vertx.core.json.JsonArray;
+import io.vertx.core.json.JsonObject;
+import org.apache.commons.lang3.ObjectUtils;
+import org.apache.commons.lang3.StringUtils;
+
+import java.util.Optional;
+
+import static com.lin.utils.JdbcUtils.REDIS_CLIENT;
+
+/**
+ * 定时器
+ *
+ * @author lin
+ */
+public class TimerUtils {
+    private static final String EMPTY_ARRAY = "[]";
+    private static final String ORDER_LIST_KEY = "orderList";
+
+    public static void periodicTimer(Vertx vertx, long periodic) {
+        vertx.setPeriodic(periodicOrDefault(periodic), timerId -> REDIS_CLIENT.lrange(ORDER_LIST_KEY, 0, -1,
+                handle -> {
+                    if (needHandleResult(handle)) {
+                        new JsonArray(handle.result().toString()).forEach(json -> {
+                            Optional.ofNullable(new JsonObject(json.toString()).mapTo(OrderPO.class))
+                                    .ifPresent(theOrderPo -> {
+                                        if (theOrderPo.statusIsOk()) {
+                                            System.out.println("恭喜您，下单成功！");
+                                            System.out.println(theOrderPo.getName() + "下单成功！时间：" + theOrderPo.getOrderTime());
+                                        } else {
+                                            System.out.println("不好意思，下单失败，原因：" + theOrderPo.getMsg());
+                                            System.out.println(theOrderPo.getName() + "下单失败！时间：" + theOrderPo.getOrderTime());
+                                        }
+                                    });
+                            REDIS_CLIENT.lpop("orderList", ref -> {
+
+                            });
+                        });
+                    }
+                }));
+    }
+
+    private static final long PERIODIC_DEFAULT = 1000;
+
+    private static long periodicOrDefault(long periodic) {
+        if (periodic < 0 || periodic > 10_000) {
+            periodic = PERIODIC_DEFAULT;
+        }
+        return periodic;
+    }
+
+    private static boolean needHandleResult(AsyncResult<JsonArray> handle) {
+        if (handle.succeeded()) {
+            String result = handle.result().toString();
+            if (StringUtils.isNotBlank(result) && ObjectUtils.notEqual(EMPTY_ARRAY, result)) {
+                JsonArray array = new JsonArray(result);
+                if (!array.isEmpty()) {
+                    return Boolean.TRUE;
+                }
+            }
+        }
+        return Boolean.FALSE;
+    }
+}

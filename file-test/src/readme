@@ -1,0 +1,19 @@
+post  http://localhost:9000/check/verify/excel
+
+{
+    "type": 0,
+    "accountId": "1",
+    "currentNodeId": "1",
+    "modelDefinitionId": "1",
+    "userId": "1",
+    "workOrderId": "1",
+    "fileList": [
+        {
+            "alias": "1",
+            "name":"1",
+            "status":"1",
+            "uid":"1",
+            "url": "http://localhost:8080/test.xlsx"
+        }
+    ]
+}

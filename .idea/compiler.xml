@@ -10,16 +10,18 @@
         <module name="service-b" />
         <module name="service-a" />
         <module name="Java8-NewFeatures" />
-        <module name="websocket" />
         <module name="pagehelper-demo" />
         <module name="shot-eureka" />
+        <module name="websocket" />
         <module name="spring-data-jpa" />
         <module name="server-zuui" />
         <module name="service-eureka" />
+        <module name="file-test" />
         <module name="springcloud01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="file-test" target="1.8" />
       <module name="Java8-NewFeatures" target="1.8" />
       <module name="pagehelper-demo" target="1.8" />
       <module name="server-zuui" target="1.8" />
@@ -36,6 +38,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Java8-NewFeatures" options="-parameters" />
+      <module name="file-test" options="-parameters" />
       <module name="pagehelper-demo" options="-parameters" />
       <module name="server-zuui" options="-parameters" />
       <module name="service-a" options="-parameters" />
