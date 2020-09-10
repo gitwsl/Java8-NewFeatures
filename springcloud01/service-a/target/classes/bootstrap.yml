@@ -1,0 +1,13 @@
+
+##如果测试springcloud-config，需要注释调application.yml里面应用名称，这里测试起的名字不一致
+##spring:
+##  application:
+##    name: service-objcat-a
+spring:
+  application:
+    name: wsl
+  cloud:
+    config:
+      uri: http://localhost:9090/
+      profile: pro
+      label: master

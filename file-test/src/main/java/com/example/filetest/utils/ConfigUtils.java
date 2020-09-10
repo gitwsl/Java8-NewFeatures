@@ -18,4 +18,6 @@ public class ConfigUtils {
     @Value("${unicom.checkFile.save.hosts}")
     private String unicomSaveHosts;
 
+    @Value("${web.upload.path}")
+    private String uploadFilePath;
 }

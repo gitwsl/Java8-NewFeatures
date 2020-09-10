@@ -62,6 +62,9 @@
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.51" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.16.4" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.2" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.10" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />
     <orderEntry type="library" name="Maven: org.apache.pulsar:pulsar-client:2.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.pulsar:pulsar-client-api:2.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.pulsar:pulsar-transaction-common:2.5.1" level="project" />

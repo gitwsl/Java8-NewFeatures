@@ -1,3 +1,19 @@
+spring:
+  ####静态资源匹配
+  mvc:
+    static-path-pattern: /**
+  resources:
+    ####静态资源路径
+    static-locations: classpath:/META-INF/resources/,classpath:/static,classpath:/resources/,file:${web.upload.path},classpath:static/,file:static/
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+
+web:
+  upload:
+    path: /Users/edz/upload2
 unicom:
   checkFile:
     check:

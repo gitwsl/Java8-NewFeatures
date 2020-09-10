@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service-b" />
+        <module name="service-a" />
+        <module name="service-eureka" />
+        <module name="springcloud01" />
+        <module name="server-zuui" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="server-zuui" target="1.8" />
+      <module name="service-a" target="1.8" />
+      <module name="service-b" target="1.8" />
+      <module name="service-eureka" target="1.8" />
+      <module name="springcloud01" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="server-zuui" options="-parameters" />
+      <module name="service-a" options="-parameters" />
+      <module name="service-b" options="-parameters" />
+      <module name="service-eureka" options="-parameters" />
+      <module name="springcloud01" options="-parameters" />
+    </option>
+  </component>
+</project>

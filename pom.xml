@@ -64,7 +64,13 @@
             <scope>compile</scope>
         </dependency>
         <!--slf4j end-->
-
+        <!-- http请求工具包依赖 start -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+        <!-- http请求工具包依赖 end -->
         <!--pulsar start-->
         <dependency>
             <groupId>org.apache.pulsar</groupId>

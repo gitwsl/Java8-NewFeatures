@@ -75,14 +75,14 @@ public class CheckServiceImpl implements CheckService {
 
                 // 文件校验
                 String checkFileUrl = configUtils.getUnicomHosts() + "/api/v2/verify/" + type + "/excel";
-                String uploadResult = HttpUtil.upload(checkFileUrl, new File(CommonConsts.UPLOAD_FILE_PATH, fileName), this.paramFileName, new HashMap<>());
+                String uploadResult = HttpUtil.upload(checkFileUrl, new File(configUtils.getUploadFilePath(), fileName), this.paramFileName, new HashMap<>());
                 if (null == uploadResult) {
                     log.error("uploadResult is null");
                     return false;
                 }
                 // 校验结果转换并删除文件
                 CheckResult checkResult = JSON.parseObject(uploadResult, CheckResult.class);
-                new File(CommonConsts.UPLOAD_FILE_PATH, fileName).delete();
+                new File(configUtils.getUploadFilePath(), fileName).delete();
                 // 单个字段保存（工单编辑）添加content参数
                 params.put("content", "{" + finalContentKey + ":\"<p>" + checkResult.getResult().getExecCode() + "</p>\"}");
                 try {
@@ -100,12 +100,16 @@ public class CheckServiceImpl implements CheckService {
     }
 
     private boolean downloadFile(String fileUrl) {
+        File dir = new File(configUtils.getUploadFilePath());
+        if (!dir.exists()) {
+            dir.mkdirs();
+        }
         InputStream inputStream = HttpUtil.httpGetDownloadFile(fileUrl);
-        FileUtils.input2file(inputStream, new File(CommonConsts.UPLOAD_FILE_PATH, fileUrl.substring(fileUrl.lastIndexOf(File.separator))));
+        FileUtils.input2file(inputStream, new File(configUtils.getUploadFilePath(), fileUrl.substring(fileUrl.lastIndexOf(File.separator))));
 
         String fileName = fileUrl.substring(fileUrl.lastIndexOf(File.separator));
-        if (!new File(CommonConsts.UPLOAD_FILE_PATH, fileName).exists()) {
-            log.error("create {}{} file fail ", CommonConsts.UPLOAD_FILE_PATH, fileName);
+        if (!new File(configUtils.getUploadFilePath(), fileName).exists()) {
+            log.error("create {}{} file fail ", configUtils.getUploadFilePath(), fileName);
             return false;
         }
         return true;

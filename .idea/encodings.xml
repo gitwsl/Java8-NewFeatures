@@ -14,9 +14,9 @@
     <file url="file://$PROJECT_DIR$/springcloud01/service-a/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud01/service-b/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud01/service-b/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud01/service-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud01/service-eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud01/service-eureka/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springcloud01/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/websocket/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/websocket/src/main/resources" charset="UTF-8" />

@@ -13,6 +13,7 @@
         <module name="pagehelper-demo" />
         <module name="shot-eureka" />
         <module name="websocket" />
+        <module name="service-config" />
         <module name="spring-data-jpa" />
         <module name="server-zuui" />
         <module name="service-eureka" />
@@ -27,6 +28,7 @@
       <module name="server-zuui" target="1.8" />
       <module name="service-a" target="1.8" />
       <module name="service-b" target="1.8" />
+      <module name="service-config" target="1.8" />
       <module name="service-eureka" target="1.8" />
       <module name="shot-eureka" target="1.5" />
       <module name="spring-data-jpa" target="1.8" />
@@ -43,6 +45,7 @@
       <module name="server-zuui" options="-parameters" />
       <module name="service-a" options="-parameters" />
       <module name="service-b" options="-parameters" />
+      <module name="service-config" options="-parameters" />
       <module name="service-eureka" options="-parameters" />
       <module name="shot-eureka" options="" />
       <module name="spring-data-jpa" options="-parameters" />

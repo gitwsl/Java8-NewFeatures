@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/pagehelper-demo/pom.xml" />
         <option value="$PROJECT_DIR$/shot-eureka/pom.xml" />
         <option value="$PROJECT_DIR$/file-test/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud01/service-config/pom.xml" />
       </list>
     </option>
   </component>

@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/springcloud01/server-zuui/server-zuui.iml" filepath="$PROJECT_DIR$/springcloud01/server-zuui/server-zuui.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud01/service-a/service-a.iml" filepath="$PROJECT_DIR$/springcloud01/service-a/service-a.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud01/service-b/service-b.iml" filepath="$PROJECT_DIR$/springcloud01/service-b/service-b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud01/service-config/service-config.iml" filepath="$PROJECT_DIR$/springcloud01/service-config/service-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud01/service-eureka/service-eureka.iml" filepath="$PROJECT_DIR$/springcloud01/service-eureka/service-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/shot-eureka/shot-eureka.iml" filepath="$PROJECT_DIR$/shot-eureka/shot-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-data-jpa/spring-data-jpa.iml" filepath="$PROJECT_DIR$/spring-data-jpa/spring-data-jpa.iml" />

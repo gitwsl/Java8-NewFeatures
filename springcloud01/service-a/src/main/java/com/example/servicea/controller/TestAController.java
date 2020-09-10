@@ -7,10 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestAController {
     @Value("${server.port}")
-    private  String port;
+    private String port;
+
+    @Value("${config.testValue}")
+    private String testValue;
 
     @RequestMapping("testA")
-    public String TestAController(){
-        return "Hello,SpringCloud for TestA~~~~" +port;
+    public String TestAController() {
+        return "Hello,SpringCloud for TestA~~~~" + port + "  test config value: " + testValue;
     }
 }
