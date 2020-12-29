@@ -1,0 +1,21 @@
+
+Z
+java:S1854?">Remove this useless assignment to local variable "resultData".(Û®±}8¸óÄÆê.
+U	java:S106<"9Replace this use of System.out or System.err by a logger.(´÷ÿı8¸óÄÆê.
+Q
+java:S1481"/Remove this unused "resultData" local variable.(ªşïÄÿÿÿÿÿ8õøÆÄê.
+]	java:S1257"<This block of commented-out lines of code should be removed.(‚é°ûÿÿÿÿ8¸óÄÆê.
+W	java:S125"<This block of commented-out lines of code should be removed.(×¬ÇS8¡ÂÖÆê.
+]	java:S125("<This block of commented-out lines of code should be removed.(¢†ëéùÿÿÿÿ8¸óÄÆê.
+Z
+java:S1854.">Remove this useless assignment to local variable "resultData".(Û®±}8¸óÄÆê.
+]	java:S125%"<This block of commented-out lines of code should be removed.(‚é°ûÿÿÿÿ8¸óÄÆê.
+`
+java:S1854">Remove this useless assignment to local variable "resultData".(ªşïÄÿÿÿÿÿ8­ÉÄê.
+h
+java:S2095"FUse try-with-resources or close this "Producer" in a "finally" clause.(“ù—Çşÿÿÿÿ8ƒÛ—Åê.
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(´÷ÿı8¸óÄÆê.
+U	java:S106'"9Replace this use of System.out or System.err by a logger.(Áªø8÷ğ‡Èê.
+]	java:S1259"<This block of commented-out lines of code should be removed.(¢†ëéùÿÿÿÿ8¸óÄÆê.
+]	java:S125@"<This block of commented-out lines of code should be removed.(ß›Î¯ûÿÿÿÿ8ĞÍÊÆê.
+]	java:S1250"<This block of commented-out lines of code should be removed.(–Ì®Ïÿÿÿÿÿ8¸óÄÆê.

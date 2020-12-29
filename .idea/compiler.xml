@@ -6,25 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-mybatisplus" />
+        <module name="Java8-NewFeatures" />
         <module name="service-b" />
         <module name="service-a" />
-        <module name="Java8-NewFeatures" />
         <module name="pagehelper-demo" />
         <module name="shot-eureka" />
+        <module name="redis-lock" />
         <module name="websocket" />
-        <module name="service-config" />
-        <module name="spring-data-jpa" />
-        <module name="server-zuui" />
         <module name="service-eureka" />
-        <module name="file-test" />
+        <module name="service-config" />
+        <module name="server-zuui" />
+        <module name="log-demo" />
         <module name="springcloud01" />
+        <module name="springboot-mybatisplus" />
+        <module name="file-test" />
+        <module name="spring-data-jpa" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="file-test" target="1.8" />
       <module name="Java8-NewFeatures" target="1.8" />
+      <module name="log-demo" target="1.8" />
       <module name="pagehelper-demo" target="1.8" />
+      <module name="redis-lock" target="1.8" />
       <module name="server-zuui" target="1.8" />
       <module name="service-a" target="1.8" />
       <module name="service-b" target="1.8" />
@@ -41,7 +45,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Java8-NewFeatures" options="-parameters" />
       <module name="file-test" options="-parameters" />
+      <module name="log-demo" options="-parameters" />
       <module name="pagehelper-demo" options="-parameters" />
+      <module name="redis-lock" options="-parameters" />
       <module name="server-zuui" options="-parameters" />
       <module name="service-a" options="-parameters" />
       <module name="service-b" options="-parameters" />

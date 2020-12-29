@@ -1,0 +1,19 @@
+
+`	java:S112/"FDefine and throw a dedicated exception instead of using a generic one.(••Ó›ûÿÿÿÿ
+`
+java:S4488 "JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(™™¬…
+e
+java:S4488'"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(µòŽ»ÿÿÿÿÿ
+g
+java:S22594"LA "NullPointerException" could be thrown; "getFieldError()" can return null.(ŸˆÔùûÿÿÿÿ
+^
+java:S1192$"HDefine a constant instead of duplicating this literal "success" 3 times.(®ìÙÀ
+`	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(ÈÙâÂüÿÿÿÿ
+`	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(„ªá÷ýÿÿÿÿ
+^
+java:S1192""HDefine a constant instead of duplicating this literal "user={}" 3 times.(ô÷Àœ
+e
+java:S4488."JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(¿¬¡£ûÿÿÿÿ
+N
+java:S1874"3Remove this use of "description"; it is deprecated.(åƒÉ¿øÿÿÿÿ
+`	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(ŸˆÔùûÿÿÿÿ

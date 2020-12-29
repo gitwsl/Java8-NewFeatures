@@ -83,11 +83,11 @@ public class PulsarUtils {
 
     public static void main(String[] args) throws Exception {
         PulsarClient client = PulsarClient.builder()
-                .serviceUrl("pulsar://10.0.3.140:6650")
+                .serviceUrl("pulsar://10.2.2.162:6650")
                 .build();
         Consumer<byte[]> consumer = client.newConsumer()
                 .topics(Arrays.asList(
-                        "POINT_DATA_TRANSFORMED_2_ALERT_RULE_qa"))
+                        "persistent://public/compute-metrics/metricLocalTest0101"))
                 .subscriptionName("test-factory")
                 .ackTimeout(10, TimeUnit.SECONDS)
                 .subscriptionType(SubscriptionType.Shared)
