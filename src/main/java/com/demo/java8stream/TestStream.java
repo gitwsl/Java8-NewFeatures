@@ -16,6 +16,8 @@ public class TestStream {
 
     public static List<Emp> list = new ArrayList<>();
 
+
+
     static {
         list.add(new Emp("上海", "小名", 17));
         list.add(new Emp("北京", "小红", 18));
@@ -23,6 +25,7 @@ public class TestStream {
         list.add(new Emp("广州", "小灰", 20));
         list.add(new Emp("杭州", "小黄", 21));
         list.add(new Emp("贵阳", "小白", 22));
+        int a = 0;
     }
 
     public static void test1() {

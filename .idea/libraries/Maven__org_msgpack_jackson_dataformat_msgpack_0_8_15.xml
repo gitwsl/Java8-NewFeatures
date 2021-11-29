@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.msgpack:jackson-dataformat-msgpack:0.8.15">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../java/maven/org/msgpack/jackson-dataformat-msgpack/0.8.15/jackson-dataformat-msgpack-0.8.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../repository/org/msgpack/jackson-dataformat-msgpack/0.8.15/jackson-dataformat-msgpack-0.8.15.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../java/maven/org/msgpack/jackson-dataformat-msgpack/0.8.15/jackson-dataformat-msgpack-0.8.15-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../repository/org/msgpack/jackson-dataformat-msgpack/0.8.15/jackson-dataformat-msgpack-0.8.15-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../java/maven/org/msgpack/jackson-dataformat-msgpack/0.8.15/jackson-dataformat-msgpack-0.8.15-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../repository/org/msgpack/jackson-dataformat-msgpack/0.8.15/jackson-dataformat-msgpack-0.8.15-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
