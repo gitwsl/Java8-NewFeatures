@@ -23,6 +23,7 @@ public class TestStream {
         list.add(new Emp("广州", "小灰", 20));
         list.add(new Emp("杭州", "小黄", 21));
         list.add(new Emp("贵阳", "小白", 22));
+        list.add(new Emp("河南", "小王", 24));
     }
 
     public static void test1() {
