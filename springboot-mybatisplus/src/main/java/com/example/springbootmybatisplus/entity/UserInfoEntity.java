@@ -2,6 +2,7 @@ package com.example.springbootmybatisplus.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
@@ -46,4 +47,10 @@ public class UserInfoEntity {
      * 分数
      */
     private Long fraction;
+
+    /***
+     * 新建删除字段，用于逻辑删除
+     */
+    @TableLogic
+    private Integer deleted;
 }
