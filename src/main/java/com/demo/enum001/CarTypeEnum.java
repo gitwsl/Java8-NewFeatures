@@ -7,7 +7,6 @@ package com.demo.enum001;
  * @Date 2020-01-08 11:32
  */
 public enum CarTypeEnum {
-
     CAR_TYPE_BMW("bmw", "宝马"),
     CAR_TYPE_BC("bc", "奔驰"),
     CAR_TYPE_AUDI("audi", "奥迪");
@@ -48,4 +47,8 @@ public enum CarTypeEnum {
     private String desc() {
         return this.desc;
     }
+    public static void main(String[] args) {
+        System.out.println(CarTypeEnum.CAR_TYPE_AUDI.type);
+    }
+
 }
