@@ -1,0 +1,14 @@
+server:
+  port: 8021
+spring:
+  #给项目来个名字
+  application:
+    name: rabbitmq-provider
+  #配置rabbitMq 服务器
+  rabbitmq:
+    addresses: 10.15.123.81:5672
+    username: nuctech
+    password: nuctech
+    listener:
+      simple:
+        acknowledge-mode: manual
